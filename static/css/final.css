@@ -1,0 +1,19 @@
+.title {
+  text-align: center;
+  background-color: black;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.tblRow {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}

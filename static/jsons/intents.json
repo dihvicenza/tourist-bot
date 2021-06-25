@@ -1,0 +1,831 @@
+{
+  "intents": [
+    {
+      "tag": "greetings",
+      "patterns": [
+        "hello",
+        "hey",
+        "hi",
+        "good day",
+        "greetings",
+        "what's up?",
+        "how is it going?",
+        "Boy",
+        "Girl",
+        "Hey mate",
+        "Morning",
+        "Yo",
+        "High five",
+        "You alive?"
+      ],
+      "responses": ["Hello! I am here to help you! Just ask me something", "Hey! I am here to help you! Just ask me something"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye",
+        "Nice chatting to you, bye",
+        "Till next time",
+        "Stay in touch",
+        "In a while",
+        "I'm off",
+        "Take it easy",
+        "Cheers",
+        "Take care",
+        "I'm out of it",
+        "Got to go"
+      ],
+      "responses": ["Hope to have been useful! To end this conversation and see all the things you've selected, write Stop"]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Awesome, thanks",
+        "Thanks for helping me",
+        "Shout out",
+        "I owe you one",
+        "Many thanks",
+        "You helped"
+      ],
+      "responses": ["Happy to help!", "Any time!", "It has been a pleasure to help you"]
+    },
+    {
+      "tag": "options",
+      "patterns": [
+        "How you could help me?",
+        "What help you provide?",
+        "How you can be helpful?",
+        "What's your function?",
+        "What you do?",
+        "You can help for what?",
+        "What can you do?"
+      ],
+      "responses": ["I can answer question about places and attractions that are avaiable in the are you've selected. Note that the search area isn't the single city you have choosen, but the province it is part of. Also note that asking a new question will delete all previous results (but the ones you selected will stay memorized and can be seen in the ending page)."]
+    },
+    {
+      "tag": "attraction",
+      "patterns": [
+        "I would like to know the attraction",
+        "What attraction are there",
+        "Is there any attraction",
+        "What can i do at night",
+        "What are the tourist attractions?",
+        "Where do tourists go usually",
+        "Is there anything I can do?",
+        "Can you suggest me something to do?",
+        "Is there anything interesting near me?"
+      ],
+      "responses": ["Here are all the tourist attractions I could find!"]
+    },
+    {
+      "tag": "bar",
+      "patterns": [
+        "I would like to know the bar",
+        "What bar are there",
+        "Is there any bar",
+        "Where can i drink something",
+        "What are the best bar?",
+        "Can you suggest me some bar?",
+        "bar",
+        "How can I reach bar",
+        "Where do i find bar",
+        "Where is situated bar",
+        "Which ways is bar",
+        "Can you guide me toward bar"
+      ],
+      "responses": ["Here are all the bars I could find!"]
+    },
+    {
+      "tag": "mall",
+      "patterns": [
+        "I would like to know the mall",
+        "What mall are there",
+        "Are there any shopping centre",
+        "What about the shopping centre",
+        "mall",
+        "shopping centre",
+        "What are the best shopping centre?",
+        "the mall",
+        "How can I reach mall",
+        "Where do i find shopping centre",
+        "Where is situated shopping centre",
+        "Which ways is shopping centre",
+        "Can you guide me toward the mall"
+      ],
+      "responses": ["Here are all the malls I could find!"]
+    },
+    {
+      "tag": "water",
+      "patterns": [
+        "I would like to know the lake",
+        "What lake are there",
+        "Are there any lake",
+        "What about the lake",
+        "lake",
+        "What are the best lake?",
+        "the lake",
+        "How can I reach lake",
+        "Where do i find lake",
+        "Where is situated lake",
+        "Which ways is lake",
+        "Can you guide me toward the lake"
+      ],
+      "responses": ["Here are all the lakes I could find!"]
+    },
+    {
+      "tag": "church",
+      "patterns": [
+        "I would like to know the church",
+        "What church are there",
+        "Are there any church",
+        "What about the church",
+        "church",
+        "What are the best church?",
+        "the church",
+        "How can I reach church",
+        "Where do i find church",
+        "Where is situated church",
+        "Which ways is church",
+        "Can you guide me toward the church"
+      ],
+      "responses": ["Here are all the churches I could find!"]
+    },
+    {
+      "tag": "cathedral",
+      "patterns": [
+        "I would like to know the cathedral",
+        "What cathedral are there",
+        "Are there any cathedral",
+        "What about the cathedral",
+        "cathedral",
+        "What are the best cathedral?",
+        "the cathedral",
+        "How can I reach cathedral",
+        "Where do i find cathedral",
+        "Where is situated cathedral",
+        "Which ways is cathedral",
+        "Can you guide me toward the cathedral"
+      ],
+      "responses": ["Here are all the cathedrals I could find!"]
+    },
+    {
+      "tag": "swimming_pool",
+      "patterns": [
+        "I would like to know the swimming pool",
+        "What swimming pool are there",
+        "Are there any swimming pool",
+        "What about the pool",
+        "swimming pool",
+        "pool",
+        "What are the best swimming pool?",
+        "the pool",
+        "How can I reach pool",
+        "Where do i find swimming pool",
+        "Where is situated swimming pool",
+        "Which ways is swimming pool",
+        "Can you guide me toward the swimming pool"
+      ],
+      "responses": ["Here are all the swimming pool I could find!"]
+    },
+    {
+      "tag": "beach_resort",
+      "patterns": [
+        "I would like to know the beach resort",
+        "What beach resort are there",
+        "Are there any beach resort",
+        "What about the beach",
+        "beach resort",
+        "beach",
+        "What are the best beach resort?",
+        "the beach resort",
+        "How can I reach beach",
+        "Where do i find beach resort",
+        "Where is situated beach",
+        "Which ways is beach resort",
+        "Can you guide me toward the beach resort"
+      ],
+      "responses": ["Here are all the beach resorts I could find!"]
+    },
+    {
+      "tag": "park",
+      "patterns": [
+        "I would like to know the park",
+        "What park are there",
+        "Is there any park",
+        "What are the best park?",
+        "Can you suggest me some park?",
+        "park",
+        "Where is situated park",
+        "Which ways is park",
+        "Can you guide me toward park"
+      ],
+      "responses": ["Here are all the parks I could find!"]
+    },
+    {
+      "tag": "fuel",
+      "patterns": [
+        "I would like to know the fuel station",
+        "What fuel station are there",
+        "Is there any fuel station",
+        "What are the best fuel station?",
+        "Can you suggest me some fuel station?",
+        "fuel station",
+        "How can I reach fuel station",
+        "Where do i find fuel station",
+        "Where is situated fuel station",
+        "Which ways is fuel station",
+        "Can you guide me toward fuel station"
+      ],
+      "responses": ["Here are all the fuel stations I could find!"]
+    },
+    {
+      "tag": "gym",
+      "patterns": [
+        "I would like to know the gym",
+        "What gym are there",
+        "Is there any gym",
+        "What are the best gym?",
+        "Can you suggest me some gym?",
+        "gym",
+        "How can I reach gym",
+        "Where do i find gym",
+        "Where is situated gym",
+        "Which ways is gym",
+        "Can you guide me toward gym"
+      ],
+      "responses": ["Here are all the gyms I could find!"]
+    },
+    {
+      "tag": "post_office",
+      "patterns": [
+        "I would like to know the post office",
+        "What post office are there",
+        "Is there any post office",
+        "What are the best post office?",
+        "Can you suggest me some post office?",
+        "post office",
+        "How can I reach post office",
+        "Where do i find post office",
+        "Where is situated post office",
+        "Which ways is post office",
+        "Can you guide me toward post office"
+      ],
+      "responses": ["Here are all the post offices I could find!"]
+    },
+    
+    {
+      "tag": "nightclub",
+      "patterns": [
+        "I would like to know where the nightclub are",
+        "What nightclubs are there",
+        "Are there any nightclub",
+        "What about the nightclub",
+        "nightclub",
+        "What are the best nightclub?",
+        "the nighclub",
+        "How can I reach nighclub",
+        "Where do i find nighclub",
+        "Where is situated nighclub",
+        "Which ways is nighclub",
+        "Can you guide me toward nighclub"
+      ],
+      "responses": ["Here are all the nightclubs I could find!"]
+    },
+    {
+      "tag": "museum",
+      "patterns": [
+        "I would like to know the museum",
+        "What museum are there",
+        "Are there any museum",
+        "What about the museum",
+        "museum",
+        "What are the best museum?",
+        "the museum",
+        "How can I reach museum",
+        "Where do i find museum",
+        "Where is situated museum",
+        "Which ways is museum",
+        "Can you guide me toward museum"
+      ],
+      "responses": ["Here are all the museums I could find!"]
+    },
+    {
+      "tag": "hospital",
+      "patterns": [
+        "I would like to know the hospital",
+        "i need an hospital",
+        "What hospital are there",
+        "Are there any hospital",
+        "What about the hospital",
+        "hospital",
+        "the hospital",
+        "How can I reach hospital",
+        "Where do i find hospital",
+        "Where is situated hospital",
+        "Which ways is hospital",
+        "Can you guide me toward hospital"
+      ],
+      "responses": ["Here are all the hospitals I could find! "]
+    },
+    {
+      "tag": "fast_food",
+      "patterns": [
+        "I would like to know the fast food",
+        "i need a fast food",
+        "What fast food are there",
+        "any fast food i should know",
+        "Are there any fast food",
+        "What about the fast food",
+        "fast food",
+        "the fast food",
+        "I would like a hamburger",
+        "Where can i buy a hamburger",
+        "hamburger",
+        "How can I reach fast food",
+        "Where do i find fast food",
+        "Where is situated fast food",
+        "Which ways is fast food",
+        "Can you guide me toward fast food"
+      ],
+      "responses": ["Here are all the fast foods I could find! "]
+    },
+    {
+      "tag": "restaurant",
+      "patterns": [
+        "I would like to know the restaurant",
+        "any restaurant i should know",
+        "i need a restaurant",
+        "What restaurant are there",
+        "Are there any restaurant",
+        "What about the restaurant",
+        "restaurant",
+        "the restaurant",
+        "I would like to eat",
+        "Where can i eat",
+        "I'm hungry",
+        "Where can i go for lunch",
+        "Where can i go for dinner",
+        "I'd like to have a meal",
+        "How can I reach restaurant",
+        "Where do i find restaurant",
+        "Where is situated restaurant",
+        "Which ways is restaurant",
+        "Can you guide me toward restaurant"
+      ],
+      "responses": ["Here are all the restaurants I could find! "]
+    },
+    {
+      "tag": "library",
+      "patterns": [
+        "I would like to know the library",
+        "i need a library",
+        "any library i should know",
+        "What libraries are there",
+        "Are there any libraries",
+        "What about the library",
+        "library",
+        "the library",
+        "I would like to read a book",
+        "Where can i rent a book",
+        "I want a book",
+        "How can I reach library",
+        "Where do i find library",
+        "Where is situated library",
+        "Which ways is library",
+        "Can you guide me toward library"
+      ],
+      "responses": ["Here are all the libraries I could find! "]
+    },
+    {
+      "tag": "bicycle_parking",
+      "patterns": [
+        "I would like to know the bicycle parking",
+        "any bicycle parking i should know",
+        "What bicycle parking are there",
+        "Are there any bicycle parking",
+        "What about the bicycle parking",
+        "bicycle parking",
+        "the bicycle parking",
+        "I would like to park my bike",
+        "Where can i park my bike",
+        "I want to park my bike",
+        "How can I reach bicycle parking",
+        "Where do i find bicycle parking",
+        "Where is situated bicycle parking",
+        "Which ways is bicycle parking",
+        "Can you guide me toward bicycle parking"
+      ],
+      "responses": ["Here are all the bicycle parkings I could find! "]
+    },
+    {
+      "tag": "bicycle_rental",
+      "patterns": [
+        "I would like to know the bicycle rental",
+        "any bicycle rental i should know",
+        "What bicycle rental are there",
+        "Are there any bicycle rental",
+        "What about the bicycle renting",
+        "bicycle rental",
+        "the bicycle rental",
+        "I would like to rent a bike",
+        "Where can i rent a bike",
+        "I want a bike",
+        "i want buy a bike",
+        "i want a bike for my journey",
+        "How can I reach a bicycle rental",
+        "Where do i find bicycle rental",
+        "Where is situated a bicycle rental",
+        "Which ways is bicycle rental",
+        "Can you guide me toward bicycle rental"
+      ],
+      "responses": ["Here are all the bicycle rentals I could find! "]
+    },
+    {
+      "tag": "boat_rental",
+      "patterns": [
+        "I would like to know the boat rental",
+        "any boat rental i should know",
+        "What boat rental are there",
+        "Are there any boat rental",
+        "What about the boat rental",
+        "boat rental",
+        "the boat rental",
+        "I would like to rent a boat",
+        "Where can i rent a boat",
+        "I want a boat",
+        "How can I reach boat rental",
+        "Where do i find boat rental",
+        "Where is situated boat rental",
+        "Which ways is boat rental",
+        "Can you guide me toward boat rental"
+      ],
+      "responses": ["Here are all the boat rentals I could find! "]
+    },
+    {
+      "tag": "car_rental",
+      "patterns": [
+        "I would like to know the car rental",
+        "any car rental i should know",
+        "What car rental are there",
+        "Are there any car rental",
+        "What about the car rental",
+        "car rental",
+        "the car rental",
+        "I would like to rent a car",
+        "Where can i rent a car",
+        "I want a car",
+        "How can I reach car rental",
+        "Where do i find car rental",
+        "Where is situated car rental",
+        "Which ways is car rental",
+        "Can you guide me toward car rental"
+      ],
+      "responses": ["Here are all the car rentals I could find! "]
+    },
+    {
+      "tag": "charging_station",
+      "patterns": [
+        "I would like to know the charging station",
+        "any charge station i should know",
+        "What charging station are there",
+        "Are there any charging station",
+        "What about the charging station",
+        "charging station",
+        "the charging station",
+        "I would like to charge my car",
+        "Where can i charge a car",
+        "I want to scharge my car",
+        "How can I reach charging station",
+        "Where do i find charging station",
+        "Where is situated charging station",
+        "Which ways is charging station",
+        "Can you guide me toward charging station"
+      ],
+      "responses": ["Here are all the charging stations I could find! "]
+    },
+    {
+      "tag": "parking",
+      "patterns": [
+        "I would like to know where the car parking are",
+        "any car parking i should know",
+        "What car parking are there",
+        "Are there any car parking",
+        "What about the car parking",
+        "car parking",
+        "the car parking",
+        "I would like to park my car",
+        "Where can park my car",
+        "I want to park my car",
+        "How can I reach parking",
+        "Where do i find parking",
+        "Where is situated car parking",
+        "Which ways is for parking",
+        "Can you guide me toward parking"
+      ],
+      "responses": ["Here are all the car parkings I could find! "]
+    },
+    {
+      "tag": "atm",
+      "patterns": [
+        "I would like to know where the atm are",
+        "any atm i should know",
+        "What atm are there",
+        "Are there any atm",
+        "What about the atm",
+        "atm",
+        "the atm",
+        "I would like to withdraw some money",
+        "Where can withdraw some money",
+        "I want to withdraw some money",
+        "How can I reach atm",
+        "Where do i find atm",
+        "Where is situated atm",
+        "Which ways is atm",
+        "Can you guide me toward atm"
+      ],
+      "responses": ["Here are all the ATMs I could find! "]
+    },
+    {
+      "tag": "pharmacy",
+      "patterns": [
+        "I would like to know where the pharmacy are",
+        "any pharmacy i should know",
+        "What pharmacies are there",
+        "Are there any pharmacies",
+        "What about the pharmacy",
+        "pharmacy",
+        "the pharmacy",
+        "I would like to buy some medicine",
+        "Where can i buy some medicine",
+        "I want to some medicine",
+        "How can I reach pharmacy",
+        "Where do i find pharmacy",
+        "Where is situated pharmacy",
+        "Which ways is pharmacy",
+        "Can you guide me toward pharmacy"
+      ],
+      "responses": ["Here are all the pharmacies I could find! "]
+    },
+    {
+      "tag": "casino",
+      "patterns": [
+        "I would like to know where the casino are",
+        "any casino i should know",
+        "What casino are there",
+        "Are there any casino",
+        "What about the casino",
+        "casino",
+        "the casino",
+        "I would like to gamble",
+        "Where can i gamble",
+        "I want to gamble",
+        "How can I reach casino",
+        "Where do i find casino",
+        "Where is situated casino",
+        "Which ways is casino",
+        "Can you guide me toward casino"
+      ],
+      "responses": ["Here are all the casinos I could find! "]
+    },
+    {
+      "tag": "cinema",
+      "patterns": [
+        "I would like to know where the cinema are",
+        "any cinema i should know",
+        "What cinema are there",
+        "Are there any cinema",
+        "What about the movie theater",
+        "cinema",
+        "movie theater",
+        "I would like to watch a movie",
+        "Where can i watch a movie",
+        "I want to watch a movie",
+        "How can I reach cinema",
+        "Where do i find cinema",
+        "Where is situated cinema",
+        "Which ways is cinema",
+        "Can you guide me toward cinema"
+      ],
+      "responses": ["Here are all the cinemas I could find! "]
+    },
+    {
+      "tag": "theatre",
+      "patterns": [
+        "I would like to know where the theatre are",
+        "any threatre i should know",
+        "What theatre are there",
+        "Are there any theatre",
+        "What about the theatre",
+        "theatre",
+        "the theatre",
+        "I would like to watch an opera",
+        "How can I reach theatre",
+        "Where do i find theatre",
+        "Where is situated theatre",
+        "Which ways is theatre",
+        "Can you guide me toward theatre"
+      ],
+      "responses": ["Here are all the theatres I could find! "]
+    },
+    {
+      "tag": "drinking_water",
+      "patterns": [
+        "I would like to know where the bubbler are",
+        "What drinking fountains are there",
+        "Are there any bubbler",
+        "What about the drinking fountains",
+        "drinking fountains",
+        "bubbler",
+        "I would like to drink some water",
+        "Where can i drink water",
+        "I want to drink water",
+        "How can I reach drinking fountains",
+        "Where do i find drinking fountains",
+        "Where is situated drinking fountains",
+        "Which ways is drinking fountains",
+        "Can you guide me toward drinking fountains"
+      ],
+      "responses": ["Here are all the drinking fountains I could find! "]
+    },
+    {
+      "tag": "toilets",
+      "patterns": [
+        "I would like to know where the public toilets are",
+        "What toilets are there",
+        "Are there any public toilets",
+        "What about the toilets",
+        "toilets",
+        "the toilets",
+        "I would like to use a bathroom",
+        "How can I reach toilets",
+        "Where do i find toilets",
+        "Where is situated toilets",
+        "Which ways is toilets",
+        "Can you guide me toward toilets"
+      ],
+      "responses": ["Here are all the public toilets I could find! "]
+    },
+    {
+      "tag": "internet_cafe",
+      "patterns": [
+        "I would like to know where the internet cafe are",
+        "any internet cafe i should know",
+        "What internet cafe are there",
+        "Are there any internet cafe",
+        "What about the internet cafe",
+        "internet cafe",
+        "the internet cafe",
+        "I would like to connect to internet",
+        "How can I reach internet cafe",
+        "Where do i find internet cafe",
+        "Where is situated internet cafe",
+        "Which ways is internet cafe",
+        "Can you guide me toward internet cafe"
+      ],
+      "responses": ["Here are all the internet cafes I could find! "]
+    },
+    {
+      "tag": "aquarium",
+      "patterns": [
+        "I would like to know where the aquarium are",
+        "any aquarium i should know",
+        "What aquarium are there",
+        "Are there any aquarium",
+        "What about the aquarium",
+        "aquarium",
+        "the aquarium",
+        "I would like to use see the fish",
+        "How can I reach aquarium",
+        "Where do i find aquarium",
+        "Where is situated aquarium",
+        "Which ways is aquarium",
+        "Can you guide me toward aquarium"
+      ],
+      "responses": ["Here are all the aquariums I could find! "]
+    },
+    {
+      "tag": "caravan_site",
+      "patterns": [
+        "I would like to know where the caravan site are",
+        "any caravan site i should know",
+        "What caravan park are there",
+        "Are there any RV park",
+        "What about the caravan park",
+        "caravan site",
+        "caravan park",
+        "I would like to upark my caravan",
+        "Where can i park my camper",
+        "camper park",
+        "How can I reach caravan site",
+        "Where do i find caravan site",
+        "Where is situated caravan site",
+        "Which ways is caravan site",
+        "Can you guide me toward caravan site"
+      ],
+      "responses": ["Here are all the caravan parks I could find! "]
+    },
+    {
+      "tag": "gallery",
+      "patterns": [
+        "I would like to know where the art galleries are",
+        "any gallery i should know",
+        "What galleries are there",
+        "Are there any gallery",
+        "What about the galleries",
+        "gallery",
+        "the gallery",
+        "I would like to go to an art gallery",
+        "I want to see some paintings",
+        "How can I reach gallery",
+        "Where do i find gallery",
+        "Where is situated gallery",
+        "Which ways is gallery",
+        "Can you guide me toward gallery"
+      ],
+      "responses": ["Here are all the galleries I could find! "]
+    },
+    {
+      "tag": "picnic_site",
+      "patterns": [
+        "I would like to know where the picnic site are",
+        "any picnic site i should know",
+        "What picnic site are there",
+        "Are there any picnic site",
+        "What about the picnic site",
+        "picnic site",
+        "the picnic site",
+        "I would like to use a have a picnic",
+        "Where can i have a pic-nic",
+        "How can I reach picnic site",
+        "Where do i find picnic site",
+        "Where is situated picnic site",
+        "Which ways is picnic site",
+        "Can you guide me toward picnic site"
+      ],
+      "responses": ["Here are all the picnic sites I could find! "]
+    },
+    {
+      "tag": "theme_park",
+      "patterns": [
+        "I would like to know where the theme park are",
+        "any theme park i should know",
+        "What theme park are there",
+        "Are there any theme park",
+        "What about the theme park",
+        "theme park",
+        "funfair",
+        "I would like to go to a theme park",
+        "How can I reach theme park",
+        "Where do i find theme park",
+        "Where is situated theme park",
+        "Which ways is theme park",
+        "Can you guide me toward theme park"
+      ],
+      "responses": ["Here are all the theme parks I could find! "]
+    },
+    {
+      "tag": "viewpoint",
+      "patterns": [
+        "I would like to know where the viewpoint are",
+        "any viewpoints i should know",
+        "What viewpoints are there",
+        "Are there any viewpoints",
+        "What about the viewpoint",
+        "viewpoint",
+        "the viewpoint",
+        "I would like to have a beautiful view",
+        "How can I reach viewpoint",
+        "Where do i find viewpoint",
+        "Where is situated viewpoint",
+        "Which ways is viewpoint",
+        "Can you guide me toward viewpoint"
+      ],
+      "responses": ["Here are all the viewpoints I could find! "]
+    },
+    {
+      "tag": "zoo",
+      "patterns": [
+        "I would like to know where the zoo are",
+        "any zoo i should know",
+        "What zoo are there",
+        "Are there any zoo",
+        "What about the zoo",
+        "zoo",
+        "the zoo",
+        "I would like to see the animals",
+        "Where can i see watch the animals",
+        "How can I reach zoo",
+        "Where do i find a zoo",
+        "Where is situated a zoo",
+        "Which ways is zoo",
+        "Can you guide me toward zoo"
+      ],
+      "responses": ["Here are all the zoos I could find! "]
+    }
+  ]
+}

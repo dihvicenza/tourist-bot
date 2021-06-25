@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body,
+html {
+  border: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.header1 {
+  margin: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  background: #00758f;
+  color: white;
+  font-size: 20px;
+}
+.header {
+  margin: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  background: #eceff1;
+  color: white;
+  font-size: 20px;
+}
+
+.container {
+  position: relative;
+  color: #ffff;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  max-width: 580px;
+  width: 100%;
+  margin-top: 13%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.prova {
+  white-space: nowrap;
+}
+
+tr {
+  height: 40px;
+}
+
+.containerTable {
+  position: relative;
+  color: #ffff;
+  border-radius: 10px;
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+}
+
+.endBtn {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#tbl_id {
+  table-layout: fixed;
+  font-size: small;
+}
+table td {
+  overflow: hidden;
+}
+#question2 {
+  display: none;
+}
+#question3 {
+  display: none;
+}
+#question4 {
+  display: none;
+}
+#question5 {
+  display: none;
+}
+#question6 {
+  display: none;
+}
+#question7 {
+  display: none;
+}
+#question8 {
+  display: none;
+}
+#question9 {
+  display: none;
+}
+#all,
+#alloggio {
+  display: none;
+}
+#send {
+  display: none;
+  cursor: pointer;
+}
+
+#accomodation {
+  width: 100%;
+}
+.inner {
+  display: inline-block;
+}
+.msgBtn {
+  background-color: black; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 10px 10px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+#myMap {
+  margin-top: 10px;
+}
+
+.ml-auto {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffff;
+  font-family: "Montserrat", sans-serif;
+}
+
+#textbox {
+  margin-top: 10px;
+  width: 70%;
+}
+
+.form__group {
+  position: relative;
+  padding: 15px 10px 0;
+  margin-top: 10px;
+  width: 50%;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.3rem;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #9b9b9b;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #11998e, #38ef7d);
+  border-image-slice: 1;
+}
+
+.question {
+  width: 100%;
+  color: black;
+  font-size: 35px;
+}
+
+.options {
+  position: relative;
+  padding-left: 40px;
+  margin-top: 40px;
+  color: #000;
+  display: inline-block;
+  font-weight: bold;
+}
+
+#options label {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.options input {
+  opacity: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #ffff;
+  border: 2px solid #000;
+  border-radius: 50%;
+}
+
+.options input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.options .checkmark:after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: block;
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 300ms ease-in-out 0s;
+}
+
+.options input[type="radio"]:checked ~ .checkmark {
+  transition: 300ms ease-in-out 0s;
+}
+
+.options input[type="radio"]:checked ~ .checkmark:after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.btn-primary {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #000;
+  border: 1px solid white;
+  background-color: white;
+}
+
+.btn-success {
+  padding: 5px 25px;
+  background-color: blue;
+  color: #fff;
+  margin-top: 50px;
+}
+#chat {
+  display: none;
+}
+#myMap {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .question {
+    width: 100%;
+    word-spacing: 2px;
+  }
+}
