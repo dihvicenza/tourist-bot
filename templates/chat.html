@@ -1,0 +1,97 @@
+<html>
+  <head>
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+    <link href="static/css/chat.css" type="text/css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+    <script type="text/javascript" src="static/js/chat.js"></script>
+  </head>
+  <body
+    style="overflow: hidden;"
+    onload="document.getElementById('input').addEventListener('keypress', submitOnEnter);getCoords();loadMap(); recieveMessage('Hi! I am TouristBot, your personal vacation planner. I can help you find anything you could find interesting where you will be staying. To start, just ask me anything. When you are satisfied, just say Stop. If you need help, just say Help.')"
+  >
+    <table style="height: 100%;">
+      <tr style="height: 100%;">
+        <td style="width: 40%;">
+          <div
+            class="messaging"
+            style="margin-left: auto; margin-right: auto; height: 100%;"
+          >
+            <div class="inbox_msg" style="height: 85%;">
+              <div class="mesgs">
+                <div class="msg_history" id="chat"></div>
+              </div>
+            </div>
+            <div
+              style="
+                height: 15%;
+                background-color: #cfd8dc;
+                margin-left: auto;
+                margin-right: auto;
+              "
+            >
+              <table style="height: 100%; width: 100%;">
+                <tr style="height: 100%;">
+                  <td style="width: 80%;">
+                    <textarea
+                      maxlength="100"
+                      style="resize: none; width: 100%; height: 80%;"
+                      id="input"
+                    ></textarea>
+                  </td>
+                  <td>
+                    <button
+                      style="width: 100%; height: 80%; background-color: white;"
+                      onclick="clickButton()"
+                    >
+                      <img
+                        style="width: 75%; height: 75%;"
+                        src="static/assets/send.svg"
+                      />
+                    </button>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div
+            id="myMap"
+            style="
+              top: 0;
+              position: absolute;
+              height: 100%;
+              width: 60%;
+              margin-left: auto;
+              margin-right: auto;
+            "
+          ></div>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

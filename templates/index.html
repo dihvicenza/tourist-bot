@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Tourist Bot</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-pale-blue w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="/tourist" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Go to the Bot</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="/tourist" class="w3-bar-item w3-button w3-padding-large">Go to the Bot</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-blue w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">TOURIST BOT</h1>
+  <p class="w3-xlarge">A WebApp to help tourist plan their perfect vacation!</p>
+  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" onclick="window.location.href = '/tourist';">Go to the Bot</button>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>What is Tourist Bot?</h1>
+      <h5 class="w3-padding-32">Tourist Bot is a revolutionary webapp madre in Python which allows tourist to plan their perfect vacation easly though a chatbot powered by AI.</h5>
+
+      <p class="w3-text-grey">We use opendatas from Veneto Region and OpenStreetMap to offer you all the information required to plan your trip: from accomodation to attractions, you can search and select everything from the same app. You will not need to jump from site to site ever again!
+          Also, the data is evolving every day, so you will always be able to find new hotels, resturants...
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right" style="visibility: hidden;"></i>
+    </div>
+
+    <div class="w3-twothird">
+      <h1>How does it work?</h1>
+      <h5 class="w3-padding-32">Tourist bot is really easy to use!</h5>
+
+      <p class="w3-text-grey">In the first page, you will be asked some questions about the accomodation you would want: the city, the
+          type of accomodation and any specific requirements you have. Then, you will be shown a map with all accomodations that respect
+          the parameters you have selected and you will be required to select one. When you do, a button to proceed to the next page will be shown.
+          The second page contains a map and a chatbox where you can talk with the chatbot. Here you can ask questions about things to do, like museums and parks.
+          You can say "stop" to end the conversation and end the plan. You will be shown a summary of all your choises. You can print this page or return to this page.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-twothird">
+        <h1>Credits</h1>
+        <p class="w3-text-grey">We use data from the Open Data Portal of Veneto, under the <a href="https://dati.veneto.it/opendata/elenco_strutture_ricettive_del_veneto">Creative Commons BY</a> License
+            which is loaded in a database for speed of use. We also use data provided by OpenStreetMap, which is made by the community and free to use.
+            You can help the OpenStreetMap project <a href="https://www.openstreetmap.org/fixthemap">here</a>.
+            The applicataion was developed by Alex Prosdocimo & Matteo Mirandola.
+        </p>
+      </div>
+    </div>
+  </div>
+
+<div class="w3-container w3-white w3-center w3-padding-64">
+    <img src="static/assets/logos.png" style="width: 100%; height: auto;">
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+ <p>Application made by Alex Prosdocimo & Matteo Mirandola</p>
+ <p>Powered by Requiem</p>
+ <p>Template provided by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
+    
