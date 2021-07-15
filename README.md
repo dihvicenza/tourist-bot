@@ -6,6 +6,7 @@ Tourist Bot è una webapp programmata in Python, con frontend in HTML/CSS/JavaSc
 
 
 > Il progetto è parte del Programma Operativo Regionale del Fondo Europeo di Sviluppo Regionale (POR FESR 2014 - 2020) del Veneto, nell'ambito del bando dell'azione 231 volto alla "costituzione di Innovation Lab diretti al consolidamento/sviluppo del network Centri P3@-Palestre Digitali e alla diffusione della cultura degli Open Data."
+
   ![](/static/assets/logos.png)
   
 
