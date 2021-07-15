@@ -4,6 +4,8 @@
 
 Tourist Bot è una webapp programmata in Python, con frontend in HTML/CSS/JavaScript, che permette di aiutare turisti ad preparare la loro vacanza perfetta, tramite anche il supporto di una intelligenza artificiale che possa conversare con loro. Vengono utilizzati dati open per ogni parte dell'applicazione
 
+
+> Il progetto è parte del Programma Operativo Regionale del Fondo Europeo di Sviluppo Regionale (POR FESR 2014 - 2020) del Veneto, nell'ambito del bando dell'azione 231 volto alla "costituzione di Innovation Lab diretti al consolidamento/sviluppo del network Centri P3@-Palestre Digitali e alla diffusione della cultura degli Open Data."
   ![](/static/assets/logos.png)
   
 
