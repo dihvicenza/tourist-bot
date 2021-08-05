@@ -1,5 +1,7 @@
 # Tourist Bot: Portale automatico di assistenza al turismo
 
+  ![](/static/assets/innovlab.png)
+
 [Link al sito](http://touristbot.app.digitalinnovationhubvicenza.it/)
 
 Tourist Bot è una webapp programmata in Python, con frontend in HTML/CSS/JavaScript, che permette di aiutare turisti ad preparare la loro vacanza perfetta, tramite anche il supporto di una intelligenza artificiale che possa conversare con loro. Vengono utilizzati dati open per ogni parte dell'applicazione
